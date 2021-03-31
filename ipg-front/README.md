@@ -1,3 +1,63 @@
+# IPG のフロントプロジェクトフォルダ
+
+## 実行前にすること
+
+ディレクトリに次のファイルを作成する。
+
+- `.env.local` ... local 環境での環境変数を定義したファイル
+- `.env.production.local` ... production 環境 = build 時に指定する環境変数を定義したファイル
+
+それぞれのファイルの内容は次のように定義する
+
+### `.env.local`
+
+```
+API_SERVER=[ipg-api-serverが動いているポート]
+NEXT_PUBLIC_API_SERVER=[ipg-api-serverが動いているポート]
+```
+
+もし ipg-api-server がデフォルトの設定で動いている(ポートが 3001 番)なら
+
+```
+API_SERVER=http://localhost:3001
+NEXT_PUBLIC_API_SERVER=http://localhost:3001
+```
+
+というファイルを作成する。
+
+### `.env.production.local`
+
+```
+API_SERVER=[本番環境のipg-api-serverのエンドポイント]
+NEXT_PUBLIC_API_SERVER=[本番環境のipg-api-serverのエンドポイント]
+```
+
+第 15 回関東学生研究論文講演会であれば thetis で動いているので
+
+```
+API_SERVER=https://thetis.f-lab.tech.uec.ac.jp/ipg_api
+NEXT_PUBLIC_API_SERVER=https://thetis.f-lab.tech.uec.ac.jp/ipg_api
+```
+
+と指定する。
+
+## デプロイ方法
+
+- 次のコマンドを実行すると、build -> export -> sitemap generate まで一気にやってくれる
+
+```
+yarn build:all
+```
+
+- 無事にこのコマンドが実行されると [out](./out)というフォルダが生成され、中に Static HTML として出力される
+- このフォルダの中身を全部[github のリポジトリ](https://github.com/ipg-site/ipg-site.github.io)に push されることで[github pages](https://ipg-site.github.io)へデプロイされ、公開される
+
+## 以下 Next.js のの README
+
+---
+
+# NextJS apps
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

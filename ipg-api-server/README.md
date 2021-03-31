@@ -1,3 +1,43 @@
+# ipg の API サーバー
+
+ユーザー管理やファイルのアップロードとダウンロードなどを請け負うサーバー
+
+## 起動する前にやること
+
+- まずパッケージインストール
+
+```
+yarn
+```
+
+- 次にデータベースの作成
+
+```
+yarn migration
+```
+
+- 初回だとログインするための管理者ユーザーが存在しないので次のコマンドで作成する。（管理者のパスワードリセットもできる。）
+
+```
+yarn seeder seed
+```
+
+- すると、ユーザー名とパスワードが出力される。
+
+- 最後に起動、開発環境での起動は次のコマンドを実行すると 3001 番ポートで起動する
+
+```
+yarn start:dev
+```
+
+- 本番環境で起動する場合は次のコマンドで daemon 起動できる（ログアウトしても消えない）
+
+```
+pm2 start ecosystem.config.js
+```
+
+## 以下、nestjs の README
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
