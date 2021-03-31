@@ -1,0 +1,85 @@
+@import "./theme.scss";
+
+.root {
+}
+
+.container {
+  max-width: $page-max-width;
+  padding: 1em;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: none;
+  text-align: center;
+  tbody {
+    th,
+    td {
+      border-bottom: 1px solid $border-dark-color;
+      width: auto;
+    }
+    th {
+      border-right: 1px solid $border-dark-color;
+      background-color: $main-color;
+      color: $text-main-color;
+      text-align: center;
+    }
+    td {
+      text-align: left;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.listTable {
+  @extend .table;
+  thead {
+    td {
+      border-right: 1px solid $border-dark-color;
+      background-color: $main-color;
+      color: $text-main-color;
+      text-align: center;
+    }
+  }
+  tbody {
+    td {
+      text-align: center;
+    }
+
+    tr {
+      &:nth-of-type(4n) {
+        td {
+          border-bottom: 5px double black;
+        }
+      }
+      &:nth-of-type(4n + 3) {
+        td {
+          &:first-of-type,
+          &:last-of-type {
+            border-bottom: 5px double black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.errorText {
+  color: $error-text-color;
+}
+
+.verifyText {
+  color: $verify-text-color;
+}

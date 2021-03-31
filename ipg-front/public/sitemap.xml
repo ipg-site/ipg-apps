@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      
+	<url>
+		<loc>https://ipg-site.github.io//404/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//404</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/config/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/history/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/users/add/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/users/edit/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//admin/users/list/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//files/viewer/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/article</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/consent</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/movie</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/presentation</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/thumbnail_big</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//imgs/thumbnail_small</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//login/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//program/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//program/poster1/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//program/poster2/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+
+	<url>
+		<loc>https://ipg-site.github.io//users/index</loc>
+		<lastmod>2021-03-02</lastmod>
+	</url>
+</urlset>

@@ -1,0 +1,21 @@
+@import "./theme.scss";
+
+.sectionHeader {
+  max-width: $page-max-width;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  text-align: left;
+  width: 100%;
+  font-family: "Kosugi";
+
+  &::before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 10px;
+    background-color: $main-color;
+    max-width: 2.8em;
+    margin-bottom: 0.3em;
+  }
+}

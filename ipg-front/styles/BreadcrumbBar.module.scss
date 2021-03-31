@@ -1,0 +1,16 @@
+@import "./theme.scss";
+
+.root {
+  border-bottom: 1px solid $border-dark-color;
+}
+
+.container {
+  max-width: $page-max-width;
+  padding: 1em;
+  margin: auto;
+}
+
+.crumbArrow {
+  padding: 0 1em;
+  display: inline-block;
+}

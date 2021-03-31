@@ -1,0 +1,17 @@
+@import "./theme.scss";
+
+.root {
+  margin-top: 1em;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mqDown(sm) {
+    padding: 0 1em;
+  }
+}
+
+.inputContainer {
+  max-width: 600px;
+  width: 100%;
+}

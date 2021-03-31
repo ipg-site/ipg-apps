@@ -1,0 +1,57 @@
+$main-color: rgb(36, 31, 78);
+$light-color: lighten($main-color, 75%);
+$light2-color: lighten($light-color, 10%);
+$text-main-color: lighten($main-color, 75%);
+$header-height: 96px;
+$main-shadow-color: lighten($main-color, 30%);
+$text-main-blur-color: darken($text-main-color, 30%);
+$text-main-shadow-color: darken($text-main-color, 50%);
+$border-main-color: $main-color;
+$border-dark-color: darken($border-main-color, 50%);
+
+$error-color: rgb(255, 164, 137);
+$verify-color: rgb(139, 255, 201);
+$error-border-color: darken($error-color, 50%);
+$verify-border-color: darken($verify-color, 50%);
+$error-text-color: darken($error-color, 35%);
+$verify-text-color: darken($verify-color, 35%);
+
+$page-max-width: 1100px;
+
+$breakpoint-xs: 0px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+$breakpoint-4k: 2560px;
+
+$breakpoints: xs, sm, md, lg, xl;
+$breakpoint-width: (
+  xs: 0px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px,
+  4k: 2560px,
+);
+
+$next-breakpoints: (
+  xs: sm,
+  sm: md,
+  md: lg,
+  lg: xl,
+  xl: 4k,
+);
+
+@mixin mqUp($bp: md) {
+  @media screen and (min-width: map-get($breakpoint-width, $nbp)) {
+    @content;
+  }
+}
+
+@mixin mqDown($bp: md) {
+  $nbp: map-get($next-breakpoints, $bp);
+  @media screen and (max-width: map-get($breakpoint-width, $bp)) {
+    @content;
+  }
+}

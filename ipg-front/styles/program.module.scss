@@ -1,0 +1,94 @@
+@import "./theme.scss";
+
+$left-ratio: 25%;
+$right-ratio: calc(100% - #{$left-ratio});
+
+.root {
+}
+
+.container {
+  max-width: $page-max-width;
+  padding: 1em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  @include mqDown(md) {
+    flex-wrap: wrap;
+  }
+}
+
+.leftContainer {
+  padding: 1em;
+  width: $left-ratio;
+  @include mqDown(md) {
+    width: 100%;
+  }
+}
+
+.rightContainer {
+  max-width: $page-max-width;
+  padding: 1em;
+  width: $right-ratio;
+  @include mqDown(md) {
+    width: 100%;
+  }
+}
+
+.leftSide {
+  @include mqDown(md) {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  @include mqDown(sm) {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  .menuItem {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    font-family: "Sawarabi Gothic";
+    background-color: $light-color;
+    border: 1px solid $border-main-color;
+    padding: 1em;
+    margin-bottom: 0.5em;
+
+    @include mqDown(md) {
+      width: 33%;
+      padding: 0.5em;
+      text-align: center;
+      border-right: none;
+
+      &:last-child {
+        border-right: 1px solid $border-main-color;
+      }
+    }
+
+    @include mqDown(sm) {
+      width: 100%;
+      margin-bottom: 0em;
+      border-right: 1px solid $border-main-color;
+      border-bottom: none;
+
+      &:last-child {
+        border-bottom: 1px solid $border-main-color;
+      }
+    }
+  }
+}
+
+.presentationRow {
+  background-color: $light-color;
+  border: 1px solid $border-main-color;
+  padding: 1em;
+  a {
+    text-decoration: underline;
+  }
+  border-bottom: none;
+  &:last-child {
+    border-bottom: 1px solid $border-main-color;
+  }
+}

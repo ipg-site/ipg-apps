@@ -1,0 +1,31 @@
+@import "./theme.scss";
+
+.root {
+}
+
+.container {
+  max-width: $page-max-width;
+  padding: 1em;
+  margin: auto;
+}
+
+.fileContainer {
+  overflow: scroll;
+  max-height: 80vh;
+  canvas {
+    margin: auto;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonHalf {
+  width: 50%;
+}
+
+.video {
+  width: 100%;
+}

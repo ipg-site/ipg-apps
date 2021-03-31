@@ -1,0 +1,26 @@
+{
+   "type": "sqlite",
+   "database": "data/dev.sqlite",
+   "synchronize": false,
+   "logging": true,
+   "entities": [
+      "dist/entities/**/*.js"
+   ],
+   "migrations": [
+      "dist/migrations/**/*.js"
+   ],
+   "subscribers": [
+      "dist/subscribers/**/*.js"
+   ],
+   "seeds": [
+      "dist/seeds/**/*.js"
+   ],
+   "factories": [
+      "dist/factories/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscribers"
+   }
+ }

@@ -1,0 +1,3 @@
+{
+    "eslint.workingDirectories": [ "./ipg-api-server", "./new-ipg-api-server" ]
+}

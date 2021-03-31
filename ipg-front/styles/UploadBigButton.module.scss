@@ -1,0 +1,39 @@
+@import "./theme.scss";
+
+.errorRoot {
+  margin: 1em;
+  width: 300px;
+  min-height: 300px;
+  border: 1px solid $error-color;
+  border-radius: 10px;
+
+  .container {
+    min-height: 300px;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1em;
+    color: $error-text-color;
+
+    img {
+      width: 100px;
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
+
+.verifyRoot {
+  @extend .errorRoot;
+  border-color: $verify-color;
+  .container {
+    color: $verify-text-color;
+  }
+}
+
+.link {
+  text-decoration: underline;
+}

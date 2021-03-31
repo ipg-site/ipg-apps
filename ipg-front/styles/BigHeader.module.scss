@@ -1,0 +1,42 @@
+@import "./theme.scss";
+
+.root {
+  background-color: $main-color;
+  height: 80vh;
+  color: $text-main-color;
+  box-shadow: 0px 4px 10px $main-shadow-color;
+  padding: 0 3em;
+
+  .headerTitle {
+    position: absolute;
+    font-size: 6em;
+    @include mqDown(sm) {
+      font-size: 3em;
+    }
+    text-align: left;
+    font-family: "Sawarabi Gothic", serif;
+  }
+}
+
+.appHeaderContainer {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  transform: translateY(-50vh);
+  transition: all 0.5s ease;
+}
+
+.childrenContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  @include mqDown(sm) {
+    justify-content: center;
+  }
+  justify-content: flex-end;
+  align-items: flex-end;
+  & > div {
+    margin-bottom: 1em;
+  }
+}

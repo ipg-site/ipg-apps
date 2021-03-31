@@ -1,0 +1,87 @@
+@import "./theme.scss";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  @include mqDown(sm) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  align-items: center;
+  margin: 1em 0;
+}
+
+.inputBox {
+  width: 70%;
+  @include mqDown(sm) {
+    width: 100%;
+  }
+  outline: none;
+  border: none;
+  min-height: 2em;
+  border-bottom: 1px solid $border-main-color;
+  transition: all 0.3s ease;
+  &:focus {
+    border-bottom: 1px solid $border-dark-color;
+  }
+}
+
+.button {
+  color: $text-main-color;
+  width: 100%;
+  border: 1px solid $border-main-color;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  &:hover {
+    background-color: lighten($main-color, 10%);
+  }
+  &:active {
+    background-color: darken($main-color, 10%);
+    border: 3px inset $border-main-color;
+  }
+}
+
+.button-primary {
+  @extend .button;
+  background-color: $main-color;
+}
+
+.button-error {
+  @extend .button;
+  background-color: $error-color;
+  border-color: $error-border-color;
+  color: $error-text-color;
+
+  &:hover {
+    background-color: lighten($error-color, 10%);
+  }
+  &:active {
+    background-color: darken($error-color, 10%);
+    border: 3px inset $error-border-color;
+  }
+}
+
+.button-verify {
+  @extend .button;
+  background-color: $verify-color;
+  border-color: $verify-border-color;
+  color: $verify-text-color;
+
+  &:hover {
+    background-color: lighten($verify-color, 10%);
+  }
+  &:active {
+    background-color: darken($verify-color, 10%);
+    border: 3px inset $verify-border-color;
+  }
+}
+
+.select {
+  width: 70%;
+  @include mqDown(sm) {
+    width: 100%;
+  }
+}
